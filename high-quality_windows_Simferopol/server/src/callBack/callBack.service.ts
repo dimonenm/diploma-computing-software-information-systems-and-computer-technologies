@@ -6,13 +6,13 @@ import { PrismaService } from '../prisma.service';
 export class CallBackService {
   constructor(private readonly prisma: PrismaService) {}
 
-  async create(dto: CreateCallBackDto) {
+  create(dto: CreateCallBackDto) {
     const callBackItem: CreateCallBackDto = {
       name: dto.name,
       phone: dto.phone
     };
-    return await this.prisma.callBack.create({
-      data: callBackItem
+    return this.prisma.callBack.create({
+      data: { name: dto.name, phone: dto.phone },
     });
   }
 
