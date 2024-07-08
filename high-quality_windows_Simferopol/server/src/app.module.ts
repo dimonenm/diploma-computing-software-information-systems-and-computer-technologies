@@ -1,7 +1,8 @@
 import { Module } from '@nestjs/common';
+import { CallbackModule } from './callBack/callBack.module';
 
 @Module({
-  imports: [],
+  imports: [CallbackModule],
   controllers: [],
   providers: [],
 })
