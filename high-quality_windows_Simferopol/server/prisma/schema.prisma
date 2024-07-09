@@ -11,6 +11,7 @@ model CallBack {
   createdAt DateTime @default(now()) @map("created_at")
   updatedAt DateTime @updatedAt @map("updated_at")
 
+  name String 
   phoneNumber String @map("phone_number")
 
   @@map("callback")

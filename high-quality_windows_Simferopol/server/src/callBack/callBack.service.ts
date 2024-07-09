@@ -9,14 +9,14 @@ export class CallBackService {
   create(dto: CreateCallBackDto) {
     const callBackItem: CreateCallBackDto = {
       name: dto.name,
-      phone: dto.phone
+      phoneNumber: dto.phoneNumber,
     };
     return this.prisma.callBack.create({
-      data: { name: dto.name, phone: dto.phone },
+      data: callBackItem,
     });
   }
 
   async findAll() {
-    return await this.prisma.callBack.findMany({});
+    return await this.prisma.callBack.findMany();
   }
 }
