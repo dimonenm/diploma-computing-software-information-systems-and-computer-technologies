@@ -1,4 +1,4 @@
-import { Controller, Get, Post, Body  } from '@nestjs/common';
+import { Controller, Get, Post, Body, Delete, Param  } from '@nestjs/common';
 import { CallBackService } from './callBack.service';
 import { CreateCallBackDto } from './dto/create-callBack.dto';
 
@@ -14,5 +14,10 @@ export class CallBackController {
   @Get()
   findAll() {
     return this.callBackService.findAll();
+  }
+
+  @Delete(':id')
+  deleteById(@Param('id') id: string) {
+    return this.callBackService.deleteById(id);
   }
 }

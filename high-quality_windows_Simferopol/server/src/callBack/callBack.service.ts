@@ -6,6 +6,10 @@ import { PrismaService } from '../prisma.service';
 export class CallBackService {
   constructor(private readonly prisma: PrismaService) {}
 
+  async findAll() {
+    return await this.prisma.callBack.findMany();
+  }
+
   create(dto: CreateCallBackDto) {
     const callBackItem: CreateCallBackDto = {
       name: dto.name,
@@ -16,7 +20,7 @@ export class CallBackService {
     });
   }
 
-  async findAll() {
-    return await this.prisma.callBack.findMany();
+  async deleteById(id: string) {
+    return await this.prisma.callBack.delete({ where: { id } });
   }
 }
