@@ -6,12 +6,13 @@ export default function Home() {
   return (
     <main className={styles.main}>
       <TopNavigation />
-      <ImagesCarousel />
+      {/* <ImagesCarousel />
       <ProfilesAndAccessories />
       <ExamplesOfWorks />
       <Certificates />
+      <Questions />
       <BottomNavigation />
-      <Footer/>
+      <Footer/> */}
     </main>
   )
 }
