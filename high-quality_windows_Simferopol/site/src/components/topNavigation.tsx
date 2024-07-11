@@ -1,8 +1,6 @@
 
-export default function TopNavigation() {
-	return (
-		<div>
-		
-		</div>
-	);
+
+
+export default function TopNavigation(): JSX.Element {
+  return <div></div>
 }
