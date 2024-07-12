@@ -1,7 +1,7 @@
 import { SITE_NAME } from '@/constants/seo-constants'
 import type { Metadata } from 'next'
 import { JetBrains_Mono } from 'next/font/google'
-import './globals.css'
+import './globals.scss'
 
 const jetbrainsMono = JetBrains_Mono({
   subsets: ['cyrillic', 'latin'],

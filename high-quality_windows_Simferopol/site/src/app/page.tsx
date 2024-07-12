@@ -5,7 +5,7 @@ import ProfilesAndAccessories from '@/components/profilesAndAccessories'
 import Questions from '@/components/questions'
 import ImagesCarousel from '../components/imagesCarousel'
 import TopNavigation from '../components/topNavigation'
-import styles from "./page.module.css";
+import styles from "./page.module.scss";
 
 export default function Home() {
   return (
