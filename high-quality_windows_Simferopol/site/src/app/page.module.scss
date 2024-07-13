@@ -1,4 +1,4 @@
 .main {
 	display: grid;
-	grid-template-rows: 135px 262px 1fr 1fr 1fr 1fr 1fr;
+	grid-template-rows: 135px minmax(1fr, 593px) 1fr 1fr 1fr 1fr 1fr;
 }

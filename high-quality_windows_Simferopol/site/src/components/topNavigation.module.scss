@@ -1,8 +1,10 @@
 .main {
 	display: grid;
-	grid-template-columns: 160px 260px 1fr 1fr 1fr;
+	grid-template-columns: auto 160px 260px 5fr 130px 220px auto;
 	justify-items: center;
 	align-items: center;
+
+	gap: 20px;
 
 	.logo {
 		display: grid;
@@ -21,7 +23,7 @@
 		.p {
 			font-size: 26px;
 			font-weight: 700;
-			color: #0058A5;
+			color: #0058a5;
 		}
 
 		.d {
@@ -33,9 +35,21 @@
 
 	.nav {
 		display: grid;
-		grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
-		// justify-content: space-between;
+		grid-template-columns: 2fr 1fr 1fr 1fr 1fr 1fr 1fr;
+
 		justify-items: center;
 		align-items: center;
+
+		font-size: 14px;
+		font-weight: 400;
+	}
+
+	.social {
+		display: grid;
+		grid-template-columns: 25px 25px 25px 25px;
+		gap: 10px;
+	}
+	.callback{
+
 	}
 }

@@ -10,15 +10,17 @@ import styles from './topNavigation.module.scss'
 
 
 export default function TopNavigation(): JSX.Element {
-  console.log(styles.p)
   return (
     <div className={styles.main}>
+      <div></div>
       <div className={styles.logo}>
         <Image src={logo} alt='КАЧЕСТВЕННЫЕ ОКНА-СИМФЕРОПОЛЬ'></Image>
       </div>
       <div className={styles.phone}>
         <div className={styles.p}>+7(925)761-16-16</div>
-        <div className={styles.d}>Оставьте заявку на замер <br/> или получите консультацию</div>
+        <div className={styles.d}>
+          Оставьте заявку на замер <br /> или получите консультацию
+        </div>
       </div>
       <div className={styles.nav}>
         <div>Пластиковые окна</div>
@@ -29,23 +31,16 @@ export default function TopNavigation(): JSX.Element {
         <div>О нас</div>
         <div>Контакты</div>
       </div>
-      <div>
-        <div>
-          <Image src={instagramImg} alt='instagram'></Image>
-        </div>
-        <div>
-          <Image src={vkImg} alt='vk'></Image>
-        </div>
-        <div>
-          <Image src={viberImg} alt='viber'></Image>
-        </div>
-        <div>
-          <Image src={whatsAppImg} alt='whats app'></Image>
-        </div>
+      <div className={styles.social}>
+        <Image src={instagramImg} alt='instagram'></Image>
+        <Image src={vkImg} alt='vk'></Image>
+        <Image src={viberImg} alt='viber'></Image>
+        <Image src={whatsAppImg} alt='whats app'></Image>
       </div>
-      <div>
+      <div className={styles.callback}>
         <Image src={buttonImg} alt='Заказать звонок'></Image>
       </div>
+      <div></div>
     </div>
   )
 }
