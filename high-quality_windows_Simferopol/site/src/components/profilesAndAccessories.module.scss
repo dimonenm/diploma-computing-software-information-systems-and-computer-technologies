@@ -1,0 +1,51 @@
+.main {
+	display: grid;
+	grid-template-columns: 1fr;
+	grid-template-rows: 1fr;
+
+	justify-items: center;
+	align-items: center;
+
+	.profiles {
+		display: grid;
+		grid-template-columns: 1fr;
+		grid-template-rows: 40px 75px 1fr;
+
+		margin-top: 100px;
+
+		width: 1100px;
+
+		.title {
+			font-size: 30px;
+			font-weight: 600;
+		}
+		.menu {
+			display: grid;
+			grid-template-columns: 75px 75px;
+			grid-template-rows: 1fr;
+			justify-items: left;
+			align-items: center;
+
+			font-size: 20px;
+			font-weight: 400;
+
+			margin-top: 50px;
+
+			.active {
+				color: #0058a5;
+				text-decoration: underline;
+			}
+		}
+		.body {
+			display: grid;
+			grid-template-columns: 304px 1fr;
+			grid-template-rows: 1fr;
+
+			.imgs {
+
+			}
+			.sectors {
+			}
+		}
+	}
+}
