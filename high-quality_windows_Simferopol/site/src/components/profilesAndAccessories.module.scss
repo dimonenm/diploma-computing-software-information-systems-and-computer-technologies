@@ -19,6 +19,7 @@
 			font-size: 30px;
 			font-weight: 600;
 		}
+
 		.menu {
 			display: grid;
 			grid-template-columns: 75px 75px;
@@ -36,15 +37,152 @@
 				text-decoration: underline;
 			}
 		}
+
 		.body {
 			display: grid;
 			grid-template-columns: 304px 1fr;
 			grid-template-rows: 1fr;
 
+			gap: 50px;
+
 			.imgs {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 1fr 1fr;
+				gap: 50px;
 
 			}
+
 			.sectors {
+				display: grid;
+				grid-template-columns: 1fr;
+				grid-template-rows: 37px 1fr 46px;
+
+				.title {
+					color: #0058A5;
+					font-size: 30px;
+					font-weight: 400;
+
+					margin-left: 20px;
+				}
+
+				.columns {
+					display: grid;
+					grid-template-columns: 1fr 1fr;
+					grid-template-rows: 1fr;
+
+					.firstColumn {
+						display: grid;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr 1fr 1fr 1fr;
+
+						border-right: 1px solid #E0E0E0;
+
+						.card1 {
+							display: grid;
+							grid-template-columns: 1fr;
+							grid-template-rows: auto 1fr auto;
+
+							margin-top: 35px;
+							padding-right: 35px;
+							padding-left: 20px;
+
+							border-bottom: 1px solid #E0E0E0;
+
+							.titleCard {
+								color: #000000;
+								font-size: 30px;
+								font-weight: 500;
+							}
+
+							.text {
+								color: #828282;
+								font-size: 14px;
+
+								margin-top: 10px;
+								margin-bottom: 20px;
+							}
+
+							.size {
+								color: #0058A5;
+								font-size: 20px;
+								font-weight: 600;
+
+								margin-bottom: 50px;
+							}
+
+						}
+
+						.withoutLine {
+							border: none;
+						}
+					}
+
+					.secondColumn {
+						display: grid;
+						grid-template-columns: 1fr;
+						grid-template-rows: 1fr 1fr 1fr 1fr;
+
+						.card1 {
+							display: grid;
+							grid-template-columns: 1fr;
+							grid-template-rows: auto 1fr auto;
+
+							margin-top: 35px;
+							padding-right: 35px;
+							padding-left: 20px;
+
+							border-bottom: 1px solid #E0E0E0;
+
+							.titleCard {
+								color: #000000;
+								font-size: 30px;
+								font-weight: 500;
+							}
+
+							.text {
+								color: #828282;
+								font-size: 14px;
+
+								margin-top: 10px;
+								margin-bottom: 20px;
+							}
+
+							.size {
+								color: #0058A5;
+								font-size: 20px;
+								font-weight: 600;
+
+								margin-bottom: 50px;
+							}
+
+						}
+
+						.withoutLine {
+							border: none;
+						}
+					}
+				}
+
+				.button {
+					display: grid;
+					justify-items: center;
+					align-items: center;
+
+					color: #FDFDFD;
+					font-size: 15px;
+					font-weight: 700;
+
+					height: 46px;
+					width: 190px;
+
+					background-color: #EF3525;
+
+					border-radius: 3px;
+
+					margin-top: 50px;
+					margin-left: 20px;
+				}
 			}
 		}
 	}
