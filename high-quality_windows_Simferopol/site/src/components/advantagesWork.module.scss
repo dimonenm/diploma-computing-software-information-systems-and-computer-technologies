@@ -1,18 +1,63 @@
 .main {
-		display: grid;
+	display: grid;
 	grid-template-columns: 1fr;
 	grid-template-rows: 1fr;
 
 	justify-items: center;
 	align-items: center;
 
-	.advantages{
+	.advantages {
 		display: grid;
 		grid-template-columns: 1fr 1fr;
 		grid-template-rows: 1fr;
-	
+
 		margin-top: 100px;
-	
+
 		width: 1100px;
+
+		.desc {
+			display: grid;
+			grid-template-columns: 1fr;
+			grid-template-rows: 37px 1fr;
+
+			.title {
+				font-size: 30px;
+				font-weight: 600;
+			}
+
+			.list {
+				display: grid;
+				grid-template-columns: 160px 160px 160px;
+				grid-template-rows: 1fr 1fr;
+				gap: 1px;
+
+				width: 482px;
+
+				margin-top: 50px;
+
+				background-color: #e0e0e0;
+
+				.card {
+
+
+					width: 160px;
+
+					padding: 15px 15px 9px 15px;
+
+					background-color: #FBFBFD;
+
+					.numb{
+						color: #0058A5;
+						font-size: 20px;
+						font-weight: 600;
+					}
+					.text{
+						color: #000;
+						font-size: 16px;
+						font-weight: 400;
+					}
+				}
+			}
+		}
 	}
 }
