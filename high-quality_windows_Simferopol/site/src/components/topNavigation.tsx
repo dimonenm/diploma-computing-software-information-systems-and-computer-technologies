@@ -6,8 +6,7 @@ import viberImg from '../images/вайбер.png'
 import whatsAppImg from '../images/ВА.png'
 import buttonImg from '../images/Кнопка.png'
 import styles from './topNavigation.module.scss'
-
-
+import Link from 'next/link'
 
 export default function TopNavigation(): JSX.Element {
   return (
@@ -38,7 +37,9 @@ export default function TopNavigation(): JSX.Element {
         <Image src={whatsAppImg} alt='whats app'></Image>
       </div>
       <div className={styles.callback}>
-        <Image src={buttonImg} alt='Заказать звонок'></Image>
+        <Link href='./?modal=t'>
+          <Image src={buttonImg} alt='Заказать звонок'></Image>
+        </Link>
       </div>
       <div></div>
     </div>
