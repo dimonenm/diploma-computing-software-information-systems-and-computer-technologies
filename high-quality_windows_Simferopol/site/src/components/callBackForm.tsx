@@ -23,9 +23,9 @@ export default function CallBackForm() {
           const phone: HTMLInputElement | null =
             document.querySelector('#phone')
           if (name?.value && phone?.value) {
-            axios.post('http://localhost:3001', {
+            axios.post('http://localhost:3000/api/callback', {
               name: name.value,
-              phone: phone.value,
+              phoneNumber: phone.value,
             })
           }
         }}
